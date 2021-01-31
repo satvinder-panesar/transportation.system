@@ -2,6 +2,8 @@ import './services.scss'
 import useHttpClient from '../../common/http/useHttpClient'
 import {services} from '../../common/constants'
 import handleHttpStatus from '../../common/http/handleHttpStatus'
+import {sortServices} from './service.helper'
+import ServiceItem from '../serviceItem/serviceItem'
 
 function Services(){
 
@@ -9,12 +11,18 @@ function Services(){
 
     let retVal = handleHttpStatus(status)
     if(retVal){
-        return retVal
+        return <div id="services">
+            {retVal}
+        </div>
     }
 
     return (
         <div id="services">
-            {data && data.map(x=><div>1</div>)}
+            {data && sortServices(data).map((service, index)=>
+                <div key={`service${index}`} id={`service${index}`}>
+                    <ServiceItem key={`serviceItem${index}`} service={service}></ServiceItem>
+                </div>
+            )}
         </div>
     )
 }
