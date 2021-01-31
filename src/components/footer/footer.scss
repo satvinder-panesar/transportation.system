@@ -1,0 +1,12 @@
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--banner-color);
+    padding: 0.5em;
+    color: var(--banner-text-color);
+}
+
+#footer #message {
+    font-family: var(--banner-text-font);
+    font-size: 1.2em;
+}

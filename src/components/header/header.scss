@@ -1,0 +1,16 @@
+@import "../../css-variables.scss";
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--banner-color);
+    padding: 0.5em;
+    color: var(--banner-text-color)
+}
+
+#header #message{
+    margin-top: 0.25em;
+    font-family: var(--banner-text-font);
+    font-size: 1.2em;
+}
