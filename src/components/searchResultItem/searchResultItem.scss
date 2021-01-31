@@ -1,8 +1,9 @@
 @import "../../css-variables.scss";
 
-#contentItem{
+#searchResultItem{
+    margin-bottom: 1em;
     background-color: var(--content-highlight-color);
     color: white;
+    font-family: var(--content-text-font);
     padding: 1em;
-    margin-bottom: 1em;
 }
