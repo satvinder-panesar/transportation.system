@@ -1,3 +1,5 @@
+@import "../../css-variables.scss";
+
 #services {
     flex: 1;
     height: 50%;
@@ -6,4 +8,8 @@
 
 #services .loading {
     height: 50%;
+}
+
+.selected {
+    background-color: var(--content-highlight-color) !important;
 }
