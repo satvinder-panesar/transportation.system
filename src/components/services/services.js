@@ -1,6 +1,6 @@
 import './services.scss'
 import useHttpClient from '../../common/http/useHttpClient'
-import {services} from '../../common/constants'
+import {urls} from '../../common/constants'
 import handleHttpStatus from '../../common/http/handleHttpStatus'
 import {sortServices, highlightService} from './service.helper'
 import ServiceItem from '../serviceItem/serviceItem'
@@ -8,7 +8,7 @@ import {useState} from 'react'
 
 function Services(){
 
-    let { data, status } = useHttpClient({url: services.URL})
+    let { data, status } = useHttpClient({url: urls.services})
 
     const [lastSelectedServiceId, setLastSelectedServiceId] = useState(-1)
 
