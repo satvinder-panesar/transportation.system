@@ -1,7 +1,7 @@
 import FindIcon from '../../common/icons/find.icon'
 import './search.scss'
 import {useState} from 'react'
-import {handleChange, handleClick} from './search.helper'
+import {handleChange, handleClick, handleKeyUp} from './search.helper'
 import SearchResults from '../searchResults/searchResults'
 
 function Search(){
@@ -12,7 +12,9 @@ function Search(){
     return(
         <div>
             <div id="search">
-                <input type="text" placeholder="Enter any search term" onChange={(event)=>handleChange(event, setTriggerSearch, setSearchTerm)}></input>
+                <input type="text" placeholder="Enter any search term" 
+                    onChange={(event)=>handleChange(event, setTriggerSearch, setSearchTerm)}
+                    onKeyUp={(event)=>handleKeyUp(event, searchTerm, setTriggerSearch)}></input>
                 <span onClick={()=>handleClick(searchTerm, setTriggerSearch)}>
                     <FindIcon></FindIcon>
                 </span>

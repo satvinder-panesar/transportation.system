@@ -1,8 +1,12 @@
 export function handleChange(event, setTriggerSearch, setSearchTerm){
-    if(event.target.value === ""){
-        setTriggerSearch(false)
-    }
+    setTriggerSearch(false)
     setSearchTerm(event.target.value)
+}
+
+export function handleKeyUp(event, searchTerm, setTriggerSearch){
+    if(event.keyCode === 13){
+        handleClick(searchTerm, setTriggerSearch)
+    }
 }
 
 export function handleClick(searchTerm, setTriggerSearch){
