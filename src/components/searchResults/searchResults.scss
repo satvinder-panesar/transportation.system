@@ -4,3 +4,8 @@
     height: 30vh;
     overflow: auto;
 }
+
+#searchResults .loading{
+    color: var(--content-highlight-color);
+    font-weight: 600;
+}

@@ -11,7 +11,7 @@ function SearchResults(props){
     let retVal = handleHttpStatus(status)
 
     if(retVal){
-        return retVal 
+        return <div id="searchResults">{retVal}</div> 
     }
 
     return (
