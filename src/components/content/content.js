@@ -1,6 +1,7 @@
 import './content.scss'
 import context from '../../common/store/context'
 import {useContext} from 'react'
+import {displayContent} from './content.helper' 
 
 function Content(){
 
@@ -8,7 +9,7 @@ function Content(){
 
     return (
         <div id="content">
-            {console.log(contxt.contextState.selectedService)}
+            {displayContent(contxt.contextState.selectedService)}
         </div>       
     )
 }

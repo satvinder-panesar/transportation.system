@@ -1,3 +1,14 @@
+@import "../../css-variables.scss";
+
 #content{
     flex: 1;
+    height: 50%;
+    overflow: auto;
+}
+
+#content .message {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--content-highlight-color);
+    font-weight: 700;
 }

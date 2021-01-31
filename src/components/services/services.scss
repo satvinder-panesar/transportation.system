@@ -13,3 +13,8 @@
 .selected {
     background-color: var(--content-highlight-color) !important;
 }
+
+#services .loading{
+    color: var(--content-highlight-color);
+    font-weight: 550;
+}

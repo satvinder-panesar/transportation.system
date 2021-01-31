@@ -1,0 +1,8 @@
+@import "../../css-variables.scss";
+
+#contentItem{
+    background-color: var(--content-highlight-color);
+    color: white;
+    padding: 0.4em;
+    margin-bottom: 1em;
+}
