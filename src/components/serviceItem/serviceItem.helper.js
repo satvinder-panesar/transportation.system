@@ -1,3 +1,5 @@
+import {actionTypes} from '../../common/constants'
+
 export function operatesInEvening(serviceTypes){
     return serviceTypes.filter(x => x.name === "Night").length > 0
 }
@@ -9,4 +11,8 @@ export function hasServiceDisruptions(service){
     }else{
         return false
     }
+}
+
+export function handleServiceSelection(service, contxt){
+    contxt.contextDispatch({type: actionTypes.SELECT_SERVICE, service: service})
 }
