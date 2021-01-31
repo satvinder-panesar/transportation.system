@@ -5,7 +5,7 @@ function Header(){
     return (
         <div id="header">
             <LogoIcon></LogoIcon>
-            <div id="message">Transportation System</div>            
+            <div id="message">Transportation System - Service Menu</div>            
         </div>
         
     )
