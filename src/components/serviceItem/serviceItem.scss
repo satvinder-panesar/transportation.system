@@ -1,0 +1,19 @@
+@import "../../css-variables.scss";
+
+#serviceItem {
+    background-color: var(--banner-color);
+    padding: 0.4em;
+    margin-bottom: 0.5em;
+    border-radius: 2em;
+    color: var(--banner-text-color);
+    font-family: var(--content-text-font);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+#serviceItem svg{
+    width: 1.5em;
+    height: 1.2em;
+}
