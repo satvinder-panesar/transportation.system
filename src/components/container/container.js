@@ -1,9 +1,13 @@
+import Content from '../content/content'
+import Services from '../services/services'
+
 import './container.scss'
 
 function Container(){
     return (
         <div id="container">
-            Container
+            <Services></Services>
+            <Content></Content>
         </div>
     )
 }
