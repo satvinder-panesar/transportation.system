@@ -26,6 +26,11 @@ function Services(){
                     <ServiceItem key={`serviceItem${index}`} service={service}></ServiceItem>
                 </div>
             )}
+            {data && 
+                <div key = {`service${data.length}`} id = {`service${data.length}`} onClick={()=>highlightService(lastSelectedServiceId, data.length, setLastSelectedServiceId)}>
+                    <ServiceItem key={data.length} service = {{name: "Cycle Hire", lineStatuses: [], serviceTypes: []}}></ServiceItem>
+                </div>
+            }
         </div>
     )
 }

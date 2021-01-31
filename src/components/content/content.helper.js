@@ -1,10 +1,11 @@
 import ContentItem from '../contentItem/contentItem'
+import Search from '../search/search'
 
 export function displayContent(selectedService){
     if(!selectedService){
         return <div className="message">Please select a service</div>
     }else if(selectedService.name === "Cycle Hire"){
-        return <div>Cycle Hire</div>
+        return <Search></Search>
     }
     else{
         if(selectedService["hasDisruptions"]){
