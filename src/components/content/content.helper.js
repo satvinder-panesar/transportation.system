@@ -8,6 +8,7 @@ export function displayContent(selectedService){
         return <Search></Search>
     }
     else{
+        //showing any service disruptions
         if(selectedService["hasDisruptions"]){
             return<div>
             <div className="message">Service currently suffering disruptions:</div>

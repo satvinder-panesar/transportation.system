@@ -4,6 +4,7 @@ export function handleChange(event, setTriggerSearch, setSearchTerm){
 }
 
 export function handleKeyUp(event, searchTerm, setTriggerSearch){
+    //13 indicates enter key press
     if(event.keyCode === 13){
         handleClick(searchTerm, setTriggerSearch)
     }

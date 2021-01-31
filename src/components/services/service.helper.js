@@ -2,6 +2,8 @@ export function sortServices(data){
     return data.sort((x, y) => x.modeName > y.modeName ? (x.name > y.name ? 1: -1) : -1)
 }
 
+//below function will highlight the selected service
+//and remove highlights from any prior selections
 export function highlightService(lastSelectedServiceId, id, setLastSelectedServiceId){
     if(lastSelectedServiceId === id){
         return
