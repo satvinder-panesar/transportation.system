@@ -26,3 +26,25 @@ svg {
   border-radius: 10px;
   height: 20px;
 }
+
+@media only screen and (min-width: 700px) {
+  #container{
+    flex-direction: row !important;
+  }
+  #services, #content{
+    flex: 1;
+    height: 78vh !important;
+    padding: 1em;
+  }
+  #searchResults{
+    height: 72vh !important;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #container{
+    min-width: 950px;
+    max-width: 950px;
+    margin: auto;
+  }
+}
